@@ -1,0 +1,47 @@
+Meka Patricia Maharani
+19102269
+project pengenalan pola
+
+source code c++
+#include <iostream>
+#include <vector>
+
+testlist=[9, 4, 1, 4, 7, 10, 5, 4, 12, 4]
+a = 4
+b = 1
+def SequentialSearh(testlist,a):
+    for i in range(0,len(testlist)-1,1) :
+        if testlist[i]== a :
+            print("Found in index : ")
+            return i
+            break
+    else:
+         print("Sorry, not found!")
+         return False
+
+print(SequentialSearh(testlist,a))
+print(SequentialSearh(testlist,b))
+
+int sequentialSearch(std::vector<int>& data, int target) {
+    int count = 0;
+    for (int num : data) {
+        if (num == target) {
+            count++;
+        }
+    }
+    return count;
+}
+
+int main() {
+    // Data
+    std::vector<int> data = {9, 4, 1, 4, 7, 10, 5, 4, 12, 4};
+    int target = 4;
+
+    // Pencarian
+    int count = sequentialSearch(data, target);
+
+    // Output
+    std::cout << "Banyaknya angka " << target << " dalam data adalah: " << count << std::endl;
+
+    return 0;
+}
