@@ -1,0 +1,2 @@
+# meka
+tubes pengenalan pola
